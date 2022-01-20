@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" style="margin: 0 auto;text-align: center;">
+      <li class="nav-item">
+      <%= link_to 'Show All Inventory', root_path, class:"navbar-brand"%>
+      </li>
+
+      <li class="nav-item">
+        <%= link_to 'Show All Warehouses', warehouses_path, class:"navbar-brand"%>
+      </li>
+
+        <li class="nav-item">
+        <%= link_to 'Add a Product', new_product_path, class:"navbar-brand"%>
+      </li>
+
+      <li class="nav-item">
+        <%= link_to 'Add a Warehouse', new_warehouse_path, class:"navbar-brand"%>
+      </li>
+
+    </ul>
+
+  </div>
+  </nav>

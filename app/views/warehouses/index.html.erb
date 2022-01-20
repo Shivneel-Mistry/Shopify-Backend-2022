@@ -1,0 +1,27 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 style="text-align:center;">Warehouses</h1>
+
+
+
+<div class="container">
+<div class="row">
+<% @warehouses.each do |warehouse| %>
+<div class="col-md-4">
+<div class="card">
+<div class="card-body">
+<div> <%= render warehouse %> </div><br>
+<div> <%= link_to "Show this warehouse", warehouse %></div>
+</div>
+</div>
+</div>
+<% end %>
+</div>
+</div>
+<br>
+
+
+
+<div class="d-flex flex-row justify-content-center" style="padding-bottom:25px;">
+<%= link_to "Create A Warehouse", new_warehouse_path, class:"btn btn-secondary"%>
+<div>
